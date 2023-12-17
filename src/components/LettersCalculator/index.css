@@ -8,44 +8,122 @@
   font-family: 'Roboto';
 }
 
-.detail-container {
-  padding: 20px;
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .sub-container {
+    flex-direction: row;
+  }
+}
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .calculator-container {
+    align-items: flex-start;
+    order: 0;
+  }
 }
 
 .heading {
+  align-items: center;
   color: #ffffff;
   font-size: 30px;
   font-weight: 500;
 }
-.des {
+
+@media screen and (min-width: 768px) {
+  .heading {
+    align-items: flex-start;
+    font-size: 46px;
+  }
+}
+
+.input-phrase-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
   color: #ffffff;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .input {
-  color: #e4e7eb;
+  color: #ffffff;
   padding: 5px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 500;
   background: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid #e4e7eb;
   border-radius: 3px;
+  margin-top: 12px;
+  padding: 10px 12px;
+  outline: none;
 }
 
-.button {
-  padding: 10px;
-  text-align: center;
+@media screen and (min-width: 768) {
+  .input {
+    width: 350px;
+  }
+}
+
+.num-letters {
   font-family: 'roboto';
   background-color: #ffffff;
   color: #219a6f;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
-  margin-top: 10px;
-  width: 50%;
+  margin-top: 20px;
   border: none;
   border-radius: 5px;
+  padding: 15px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+@media screen and (min-width: 992px) {
+  .num-letters {
+    padding: 24px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .num-letters {
+    padding: 30px;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
 }
 
 .image {
-  width: 60%;
-  margin-left: 20px;
+  width: 100%;
+  order: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .image {
+    width: 550px;
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .image {
+    width: 700px;
+  }
 }

@@ -16,20 +16,26 @@ class LettersCalculator extends Component {
 
     return (
       <div className="bg-container">
-        <div className="detail-container">
-          <h1 className="heading">Calculate the Letters you enter</h1>
-          <p className="des">Enter the phrase</p>
-          <input type="text" className="input" placeholder="Enter the phrase" />
-          <br />
-          <p
-            className="no-letters"
-            onChange={this.changeCount}
-            value={lettersCount}
-          >
-            No.of Letters: {lettersCount.length}
-          </p>
-        </div>
-        <div className="image-container">
+        <div className="sub-container">
+          <div className="calculator-container">
+            <h1 className="heading">Calculate the Letters you enter</h1>
+            <div className="phrase-container">
+              <label className="label" htmlFor="phraseText">
+                Enter the phrase
+              </label>
+              <br />
+              <input
+                type="text"
+                id="phraseText"
+                className="input"
+                placeholder="Enter the phrase"
+                value={lettersCount}
+                onChange={this.changeCount}
+              />
+            </div>
+            <p className="num-letters">No.of Letters: {lettersCount.length}</p>
+          </div>
+
           <img
             src="https://assets.ccbp.in/frontend/react-js/stop-watch-with-calculator-img.png"
             alt="letters calculator"
