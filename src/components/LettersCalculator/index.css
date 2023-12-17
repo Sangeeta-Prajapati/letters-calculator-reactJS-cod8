@@ -1,0 +1,51 @@
+/* Write your code here. */
+.bg-container {
+  background-image: linear-gradient(to right, #1d976c, #219a6f, #93f9b9);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto';
+}
+
+.detail-container {
+  padding: 20px;
+}
+
+.heading {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 500;
+}
+.des {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.input {
+  color: #e4e7eb;
+  padding: 5px;
+  font-weight: bold;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+.button {
+  padding: 10px;
+  text-align: center;
+  font-family: 'roboto';
+  background-color: #ffffff;
+  color: #219a6f;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+}
+
+.image {
+  width: 60%;
+  margin-left: 20px;
+}
